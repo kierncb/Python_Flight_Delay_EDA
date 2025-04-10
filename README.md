@@ -69,3 +69,5 @@ I cleaned the dataset by first removing rows with missing values using `df.dropn
 - The scatter plot shows a strong positive correlation between departure and arrival delays—flights that depart late tend to arrive late, while early departures often lead to early arrivals
 - There are some extreme outliers with very high delays. These may represent exceptional cases, like weather disruptions or technical issues.
 - Flight distance shows no significant correlation with delays; both short-haul and long-haul flights follow a similar pattern—arrival delays increase with departure delays, and early departures often lead to early arrivals.
+
+![alt text](0410(1).gif)
