@@ -70,4 +70,13 @@ I cleaned the dataset by first removing rows with missing values using `df.dropn
 - There are some extreme outliers with very high delays. These may represent exceptional cases, like weather disruptions or technical issues.
 - Flight distance shows no significant correlation with delays; both short-haul and long-haul flights follow a similar pattern—arrival delays increase with departure delays, and early departures often lead to early arrivals.
 
-![alt text](0410(1).gif)
+![alt text](<Data_Vizualization/Relationship Between Departure and Arrival Delays Based on Flight Distance.png>)
+
+### Impact of Traffic Volume on Departure and Arrival Delays by Airline
+
+- Despite their high flight volumes, Delta Air Lines Inc (14.56%), JetBlue Airways (16.51%), and United Air Lines Inc (17.65%) maintain delays under 15 minutes, reflecting efficient operations and effective fleet management.
+- ExpressJet Airlines with 15.61% volume has the highest delays, averaging around 19 minutes, which may indicate operational challenges or congestion.
+- Airlines with lower flight volumes, such as Hawaiian Airlines Inc (0.1%) and Alaska Airlines (0.22%), typically experience shorter delays, possibly due to fewer flights, better scheduling, or less congestion.
+- In contrast, airlines like Frontier Airlines Inc (0.21%), Mesa Airlines (0.22%), and AirTan Airways (0.97%) face significant delays, averaging over 18 to 20 minutes, which could suggest inefficiencies or higher operational pressure despite their lower flight volume.
+- Endeavor Air (5.28%) and Southwest Airlines (3.68%) have medium flight volumes, with delays ranging from 16 to 17 minutes, suggesting moderate operational strain or capacity issues.
+- US Airways (6.06%), Envoy Air (7.65%), and American Airlines (9.76%) maintain medium flight volumes but manage to keep delays under 15 minutes, demonstrating good scheduling and timely operations despite the moderate number of flights.
