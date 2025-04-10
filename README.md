@@ -3,56 +3,10 @@
 Flight delays are an inevitable part of air travel, but the question is: *how can we minimize them to improve efficiency and passenger satisfaction?* This analysis uncovers critical insights into the causes and patterns of flight delays across airlines and airports, offering practical solutions to improve operational performance.
 
 ## I. Executive Summary
-### **Key Insights**
 
-**Relationship Between Departure and Arrival Delays:**
-- Strong positive correlation between departure and arrival delays—late departures lead to late arrivals.
-- No significant impact of flight distance on delays; both short- and long-haul flights follow the same delay patterns.
-- Extreme outliers likely represent disruptions (e.g., weather, technical issues).
+This analysis reveals a strong positive correlation between departure and arrival delays, with minimal influence from flight distance. Airlines like Delta, JetBlue, and United perform efficiently despite high traffic, while ExpressJet, Frontier, and Mesa struggle with delays, suggesting operational challenges. Monthly trends show higher delays during peak travel periods (June–July, December), and hourly patterns highlight increased delays from 15:00 to 21:00, peaking between 19:00–21:00. Among the New York-area airports, EWR records the longest delays due to its high volume, while JFK and LGA demonstrate better efficiency. Notably, destinations like RIC and MKE consistently suffer from delays, indicating systemic issues.
 
-**Impact of Traffic Volume on Delays by Airline:**
-- Delta, JetBlue, and United Airlines maintain delays under 15 minutes despite high traffic, indicating efficient operations.
-- ExpressJet experiences highest delays (avg. 19 minutes), suggesting operational challenges.
-- Airlines with lower volumes, like Hawaiian and Alaska, see shorter delays.
-- Airlines like Frontier and Mesa face significant delays despite low volumes, pointing to operational inefficiencies.
-
-**Monthly Delays:**
-- January-May: Lower delays (9-13 minutes), likely due to fewer flights or better management.
-- June-July: Increased delays (20-21 minutes), reflecting higher traffic and operational strain.
-- August-November: Reduced delays (5-12 minutes), possibly due to fewer flights or improved management.
-- December: Increased delays (15-16 minutes), likely due to higher traffic as the year ends.
-
-**Hourly Delays:**
-- 5:00 to 14:00: Relatively low delays (41s to 13m 42s) due to lower traffic.
-- 15:00 to 21:00: Delays rise (16-24 minutes), peaking at 19:00-21:00 due to higher traffic.
-- 22:00 to 23:00: Delays decrease (14-18 minutes) as traffic declines.
-
-**Impact of Flight Volume on Delays by Origin:**
-- EWR, the busiest, has the longest delays for both departure (15m 1s) and arrival (9m 6s).
-- JFK has shorter delays than EWR, indicating better efficiency despite high traffic.
-- LGA experiences the shortest delays, likely due to lower flight volume and efficient management.
-
-**Departure Delays by Origin:**
-- **EWR:** 58.8% of flights delayed >15 minutes, with delays ranging from 15m 8s to 41m 39s, suggesting operational inefficiencies.
-- **LGA:** 33.8% of flights delayed >15 minutes, with delays ranging from 15m 11s to 31m 20s.
-- **JFK:** 31.4% of flights delayed >15 minutes, with delays ranging from 15m 12s to 27m 20s, indicating better efficiency.
-
-**Common Delayed Destinations:**
-- **RIC, MKE, IAD, ORF** consistently experience delays across all origin airports, with RIC having the highest delays (23m 37s departure, 20m 7s arrival), pointing to systemic inefficiencies at these destinations.
-
-
-### **Key Recommendations**
-
-- **Optimize EWR Operations**: Address inefficiencies and congestion, improve scheduling, and enhance weather response strategies to reduce delays, especially during peak hours.
-- **Enhance LGA Efficiency**: Streamline delay management systems and improve coordination between ground and air operations to reduce delays, particularly during peak periods.
-- **Maintain JFK Efficiency**: Continue monitoring and optimizing current practices while investing in technology like predictive scheduling to sustain low delays.
-- **Address Delays at RIC, MKE, IAD, and ORF**: Investigate recurring delays, especially at RIC, and enhance air traffic management and infrastructure.
-- **Manage Flight Volume During Peak Periods**: Adjust flight schedules to reduce congestion during high-volume periods (June-July, December) and improve queuing and baggage handling.
-- **Leverage Traffic Volume Data for Fleet Management**: Use traffic data insights to optimize fleet scheduling and reduce delays, especially for high-volume airlines.
-- **Manage Delays by Time of Day**: Implement interventions to reduce delays during peak hours (15:00-21:00), focusing on the 19:00-21:00 window.
-- **Enhance Collaboration**: Foster stronger coordination between airports, airlines, and ground teams to improve operations and reduce delays.
-
-By implementing these strategies, airlines and airports can enhance punctuality, reduce delays, and deliver a better travel experience for passengers.
+To address these challenges, targeted improvements are recommended: optimize EWR operations, maintain JFK’s efficiency, and streamline LGA’s processes during peak hours. Addressing persistent delays at destinations like RIC and managing flight volumes during peak months can reduce congestion. Leveraging traffic data for better fleet and schedule management, especially during high-delay hours, can improve overall punctuality. Enhanced coordination between airports, airlines, and ground teams will be key in delivering a more efficient and reliable travel experience.
 
 ## II. Background
 
@@ -115,4 +69,3 @@ I cleaned the dataset by first removing rows with missing values using `df.dropn
 - The scatter plot shows a strong positive correlation between departure and arrival delays—flights that depart late tend to arrive late, while early departures often lead to early arrivals
 - There are some extreme outliers with very high delays. These may represent exceptional cases, like weather disruptions or technical issues.
 - Flight distance shows no significant correlation with delays; both short-haul and long-haul flights follow a similar pattern—arrival delays increase with departure delays, and early departures often lead to early arrivals.
-<video controls src="Data_Vizualization/Relationship Between Departure and Arrival Delays Based on Flight Distance.mp4" title="Title"></video>
