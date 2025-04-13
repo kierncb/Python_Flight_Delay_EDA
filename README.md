@@ -12,7 +12,7 @@
 
 ## I. Executive Summary
 
-This analysis reveals a strong positive correlation between departure and arrival delays, with minimal influence from flight distance. Airlines like Delta, JetBlue, and United perform efficiently despite high traffic, while ExpressJet, Frontier, and Mesa struggle with delays, suggesting operational challenges. Monthly trends show higher delays during peak travel periods (June–July, December), and hourly patterns highlight increased delays from 15:00 to 21:00, peaking between 19:00–21:00. Among the New York-area airports, EWR records the longest delays due to its high volume, while JFK and LGA demonstrate better efficiency. Notably, destinations like RIC and MKE consistently suffer from delays, indicating systemic issues.
+This analysis reveals a strong positive correlation between departure and arrival delays, with no influence from flight distance. Airlines like Delta, JetBlue, and United perform efficiently despite high traffic, while ExpressJet, Frontier, and Mesa struggle with delays, suggesting operational challenges. Monthly trends show higher delays during peak travel periods (June–July, December), and hourly patterns highlight increased delays from 15:00 to 21:00, peaking between 19:00–21:00. Among the origin airports, EWR records the longest delays due to its high volume, while JFK and LGA demonstrate better efficiency. Notably, destinations like RIC and MKE consistently suffer from delays, indicating systemic issues.
 
 To address these challenges, targeted improvements are recommended: optimize EWR operations, maintain JFK’s efficiency, and streamline LGA’s processes during peak hours. Addressing persistent delays at destinations like RIC and managing flight volumes during peak months can reduce congestion. Leveraging traffic data for better fleet and schedule management, especially during high-delay hours, can improve overall punctuality. Enhanced coordination between airports, airlines, and ground teams will be key in delivering a more efficient and reliable travel experience.
 
@@ -155,71 +155,34 @@ I cleaned the dataset by first removing rows with missing values using `df.dropn
 
 ## VII. Recommendations
 
-- **Optimize Operations at EWR**
-  - **Who**: EWR airport management and operations teams.
-  - **What**: Focus on reducing operational inefficiencies, congestion, and weather disruptions.
-  - **Why**: EWR’s longer delays (15m 1s for departures and 9m 6s for arrivals) indicate a need for operational improvement. The airport’s high flight volume (35.78%) makes delays worse, negatively impacting efficiency and passenger satisfaction.
-  - **Actions**:
-    - Adjust scheduling to ease peak-hour congestion.
-    - Streamline air traffic management.
-    - Strengthen coordination with airlines to minimize delays.
-    - Improve response strategies for weather-related disruptions.
+# Recommendations
 
-- **Improve Efficiency at LGA**
-  - **Who**: LGA airport management and airlines.
-  - **What**: Enhance delay management systems to reduce the 33.8% of flights delayed by over 15 minutes.
-  - **Why**: While delays are moderate, further improvements could boost efficiency and reduce disruptions for passengers.
-  - **Actions**:
-    - Streamline boarding processes and increase capacity during peak times.
-    - Strengthen collaboration between ground and air operations.
+- **Improve Operations at EWR**
+    - To address EWR’s significant delays—15 minutes for departures and 9 minutes for arrivals—airport management and operations teams should focus on reducing congestion and better handling weather disruptions. With the airport handling over a third of the total flight volume, these delays compound quickly. Strategies include adjusting flight schedules to reduce peak-hour pressure, improving air traffic coordination, strengthening communication with airlines, and enhancing weather-related response protocols.
 
-- **Maintain High Efficiency at JFK**
-  - **Who**: JFK airport management and operations teams.
-  - **What**: Continue to uphold JFK’s current high operational standards, as only 31.4% of flights are delayed by over 15 minutes.
-  - **Why**: JFK’s relatively low delay rate suggests effective operational practices, which should be maintained.
-  - **Actions**:
-    - Continue optimizing existing strategies.
-    - Invest in predictive scheduling tools and real-time data to maintain performance.
+- **Reduce Delays at LGA**  
+    - At LGA, 33.8% of flights are delayed by more than 15 minutes. To improve, airport management and airlines should upgrade delay management systems. Streamlining the boarding process, boosting staff capacity during busy times, and enhancing coordination between air and ground teams can help improve efficiency and reduce disruptions.
 
-- **Address Systemic Delays at RIC, MKE, IAD, and ORF**
-  - **Who**: Airport authorities at RIC, MKE, IAD, ORF; Airlines; Air Traffic Control.
-  - **What**: Investigate and resolve recurring delays, particularly at RIC, which stands out with significant delays (23m 37s departure and 20m 7s arrival).
-  - **Why**: Persistent delays at these airports are affecting overall efficiency, with RIC as a major outlier.
-  - **Actions**:
-    - Analyze airspace congestion and capacity issues.
-    - Invest in infrastructure improvements and better air traffic management.
-    - Enhance coordination between airlines and airport operations.
+- **Maintain Efficiency at JFK**  
+    - JFK has relatively low delay rates, with only 31.4% of flights delayed over 15 minutes. To keep this performance, airport management should maintain current practices and invest in predictive scheduling tools and real-time data systems. These steps will help JFK continue delivering reliable service while managing high traffic volumes.
 
-- **Focus on Peak Periods for Flight Volume Management**
-  - **Who**: Airlines, airport management, scheduling teams.
-  - **What**: Adjust scheduling during peak periods (June-July and December) to better manage flight volume.
-  - **Why**: Higher flight volumes during these months lead to increased delays, affecting operations.
-  - **Actions**:
-    - Adjust flight schedules to avoid heavy concentration during peak hours.
-    - Implement improved queuing systems and baggage handling processes.
 
-- **Leverage Traffic Volume Data for Fleet Management**
-  - **Who**: Airline fleet management teams.
-  - **What**: Use insights from traffic volume data to optimize fleet management and scheduling.
-  - **Why**: Airlines with high flight volumes, like Delta and JetBlue, maintain lower delays, suggesting that effective fleet management can reduce delays.
-  - **Actions**:
-    - Invest in fleet management technologies for better real-time scheduling.
-    - Airlines with lower volumes should find ways to scale up without compromising efficiency.
+- **Address Recurring Delays at RIC, MKE, IAD, and ORF**  
+  - Airports like RIC, MKE, IAD, and ORF show recurring delays, with RIC standing out at over 23 minutes for departures. Authorities at these airports need to investigate the causes, such as airspace congestion or infrastructure limitations. Improvements in air traffic management, infrastructure upgrades, and tighter coordination with airlines are necessary to reduce inefficiencies.
 
-- **Monitor and Manage Delays by Time of Day**
-  - **Who**: Airline scheduling teams, airport operational managers.
-  - **What**: Focus on managing delays during peak hours (15:00 to 21:00), especially between 19:00 and 21:00, when delays reach 24 minutes.
-  - **Why**: Peak periods significantly contribute to delays.
-  - **Actions**:
-    - Implement interventions like additional staff or expedited check-in.
-    - Consider staggering departure times to reduce congestion.
 
-- **Encourage Collaboration Between Airports, Airlines, and Ground Teams**
-  - **Who**: Airport authorities, airlines, ground handling teams.
-  - **What**: Foster stronger collaboration for smoother operations, particularly at high-traffic airports like EWR, JFK, and LGA.
-  - **Why**: Coordination between these entities directly impacts delay reduction and operational efficiency.
-  - **Actions**:
-    - Establish joint task forces to address challenges like gate availability and baggage handling.
-    - Create shared data systems for real-time delay monitoring and coordination.
+- **Manage Peak Season Flight Volume**  
+  - Flight volumes increase significantly in June, July, and December, contributing to more delays. Airport managers, airlines, and scheduling teams should adjust flight schedules to avoid peak-hour clustering. Enhancing queuing systems and baggage handling during these months can help maintain smoother operations and better passenger flow.
 
-By focusing on improving operational efficiency at high-traffic airports, optimizing flight scheduling during peak periods, and addressing recurring delays at specific airports, the airline industry can reduce delays, improve customer satisfaction, and enhance operational efficiency. These recommendations will help manage congestion, streamline fleet operations, and ensure smoother travel experiences.
+- **Use Traffic Data to Optimize Fleet Scheduling**  
+  - Airlines like Delta and JetBlue, which manage high volumes yet maintain lower delays, show that effective fleet management works. Airline fleet teams should use traffic data insights to improve scheduling. Those with lower traffic should explore scalable fleet strategies that maintain efficiency as demand grows.
+
+
+- **Monitor and Adjust for Time-of-Day Delays**  
+  - Delays spike between 3 PM and 9 PM, peaking at 24 minutes between 7 PM and 9 PM. Airport operations and airline schedulers should respond by adding staff during these hours and adjusting departure times to reduce bottlenecks. These changes can significantly ease congestion during peak hours.
+
+
+- **Strengthen Coordination Across Stakeholders**  
+  - At busy airports like EWR, JFK, and LGA, better collaboration between airport authorities, airlines, and ground handling teams is key. Establishing joint task forces, improving data sharing, and coordinating operations like gate assignments and baggage handling can reduce delays and streamline overall airport performance.
+ 
+By focusing on airport-specific issues, adjusting to seasonal and hourly flight patterns, and promoting better coordination across the industry, delays can be reduced, operations can become more efficient, and the overall travel experience can be improved for passengers.
