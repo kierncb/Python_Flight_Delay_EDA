@@ -8,6 +8,7 @@
 - [Data Description](#iv-data-description)
 - [Data Quality Check and Cleaning](#v-data-quality-check-and-cleaning)
 - [Insight Deep-dive](#vi-insight-deep-dive)
+- [Tableau Dashboard](#vii-tableau-dashboard)
 - [Recommendations](#vii-recommendations)
 
 ## I. Executive Summary
@@ -153,9 +154,12 @@ I cleaned the dataset by first removing rows with missing values using `df.dropn
 
 ![alt text](<Data_Vizualization/Common Airport Destinations with 15 min Departure Delay Across All Airport Origins.png>)
 
-## VII. Recommendations
+## VII. Tableau Dashboard
+![alt text](<Flight Delay Tableau Dashboard.png>)
 
-# Recommendations
+See Tableau dashboard [here](https://public.tableau.com/app/profile/kierncb/viz/Try_17529228321370/Dashboard2).
+
+## VIII. Recommendations
 
 - **Improve Operations at EWR**
     - To address EWR’s significant delays—15 minutes for departures and 9 minutes for arrivals—airport management and operations teams should focus on reducing congestion and better handling weather disruptions. With the airport handling over a third of the total flight volume, these delays compound quickly. Strategies include adjusting flight schedules to reduce peak-hour pressure, improving air traffic coordination, strengthening communication with airlines, and enhancing weather-related response protocols.
